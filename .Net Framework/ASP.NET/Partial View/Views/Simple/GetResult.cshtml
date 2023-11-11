@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Partial_View.Models.Employee>
+
+@{
+    Layout = null;
+}
+
+<table border="1">
+    @foreach (var item in Model)
+    {
+
+
+
+
+
+        @*@Html.Partial("_EmployeeTable",item);*@
+
+    Html.RenderPartial("_EmployeeTable", item); // No need to give @ 
+
+        @*<table border="1">
+                <tr>
+                    <td>@item.Emp_Id</td>
+                    <td>@item.Emp_Name</td>
+                    <td>@item.Description</td>
+                </tr>
+            </table>*@
+
+    }
+</table>
+
+
+

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckingModel", "CheckingModel.csproj", "{51255F9B-D5F0-4513-B676-11420814ADDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51255F9B-D5F0-4513-B676-11420814ADDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51255F9B-D5F0-4513-B676-11420814ADDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51255F9B-D5F0-4513-B676-11420814ADDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51255F9B-D5F0-4513-B676-11420814ADDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16B04035-B873-4CA9-B286-B6451DE9E48F}
+	EndGlobalSection
+EndGlobal

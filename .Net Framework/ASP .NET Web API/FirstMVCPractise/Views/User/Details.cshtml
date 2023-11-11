@@ -1,0 +1,50 @@
+﻿@model FirstMVCPractise.Models.User
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-6 m-auto">
+            <h4>User</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Name)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Address)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Address)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Contact)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Contact)
+                </dd>
+
+            </dl>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            @Html.ActionLink("Back to List", "Index",null,new { @class="btn btn-info"})
+        </div>
+    </div>
+</div>
+
+
+

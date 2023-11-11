@@ -1,0 +1,21 @@
+﻿@using HelperCheck.Models
+@model Customer
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowDetails1</title>
+</head>
+<body>
+    @Html.DisplayNameFor(m=>m.Cus_Name)   : @Html.DisplayFor(m=>m.Cus_Name) <br />
+    @Html.DisplayNameFor(m=>m.Cus_Phone)   : @Html.DisplayFor(m=>m.Cus_Phone) <br />
+    @Html.DisplayNameFor(m=>m.Password)   : @Html.DisplayFor(m=>m.Password) <br />
+    @Html.DisplayNameFor(m=>m.Gender)   : @Html.DisplayFor(m=>m.Gender) <br />
+    @Html.DisplayNameFor(m=>m.City)   : @Html.DisplayFor(m=>m.City)
+</body>
+</html>

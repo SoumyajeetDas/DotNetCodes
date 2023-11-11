@@ -1,0 +1,80 @@
+﻿@model QuizManagementSystem.Models.Answer
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowQuestion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&family=IM+Fell+English+SC&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="~/js/Site1.js"></script>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+
+<body style="background-color: rgb(1, 19, 38 );" onload="myFunction(@ViewBag.Time)">
+    <div class="container my-5">
+        <div class="row ">
+            <div class="col text-center">
+                <span class="bg-success text-center p-2" id="timing" style="color: white; border-radius: 4px; font-size: 24px; font-weight: bold; "></span>
+            </div>
+
+        </div>
+    </div>
+    <div class="container my-5">
+        <form asp-action="ShowQuestion1" method="post" id="myForm">
+
+            <div class="row ">
+
+
+                <div class="col-md-5 col-10 m-auto bg-dark p-md-4">
+                    <p style="font-family: 'IBM Plex Serif', serif; font-family: 'IM Fell English SC', serif; font-family: 'Roboto Slab', serif; font-size:25px;" class="text-warning">@ViewBag.Question</p>
+
+                <div class="form-group form-check text-white" style="font-size:18px;">
+                    
+                    @Html.RadioButtonFor(x => x.answer, "First") @ViewBag.FirstOption
+                </div>
+                <div class="form-group form-check text-white" style="font-size:18px;">
+                    
+                    @Html.RadioButtonFor(x => x.answer, "Second") @ViewBag.SecondOption
+                </div>
+                <div class="form-group form-check text-white" style="font-size:18px;">
+                    
+                    @Html.RadioButtonFor(x => x.answer, "Third")  @ViewBag.ThirdOption
+                </div>
+                <div class="form-group form-check text-white" style="font-size:18px;">
+                    
+                    @Html.RadioButtonFor(x => x.answer, "Fourth") @ViewBag.FourthOption
+                </div>
+
+                   
+
+                    
+                    @if (ViewBag.Count == 3)
+                    {
+                        <div class="form-group">
+                            <input type="submit" value="Submit" class="btn btn-danger" />
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="form-group">
+                            <input type="submit" value="Next" class="btn btn-info" />
+                        </div>
+                    }
+
+                </div>
+            </div>
+
+
+
+        </form>
+
+
+    </div>
+</body>
+</html>

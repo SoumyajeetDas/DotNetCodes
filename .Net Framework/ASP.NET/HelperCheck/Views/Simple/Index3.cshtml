@@ -1,0 +1,55 @@
+﻿
+@using HelperCheck.Models
+@model Customer
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index3</title>
+</head>
+<body>
+    @using(Html.BeginForm("ShowDetails1", "Simple",FormMethod.Post))
+    {
+    <table>
+        <tr>
+            <td>@Html.LabelFor(m => m.Cus_Name, "Customer Name", new { id = "Name", @class = "Name" })</td>
+            <td>
+                @Html.TextBoxFor(m => m.Cus_Name)
+               
+            </td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(m => m.Cus_Phone, "Customer Phone")</td> @*  If we want to give a different name in the view part which will be not as same as name in the index part use @Html.LableFor("property name in the model","name that we want to see in the view part")  *@
+            <td>@Html.TextBoxFor(m => m.Cus_Phone)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(m=> m.Password)</td>
+            <td>@Html.PasswordFor(m => m.Password)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(m => m.New_To_Company, "New To Company?")</td>
+            <td>@Html.CheckBoxFor(m => m.New_To_Company)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(m => m.Gender)</td>
+            <td>@Html.RadioButtonFor(m=>m.Gender,"Male") Male</td>
+            <td>@Html.RadioButtonFor(m=>m.Gender,"Female") Female</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(m => m.City)</td>
+            <td>@Html.DropDownListFor(m => m.City, new SelectList(Enum.GetValues(typeof(City))), "Select City", new { @class = "form_control" })</td>
+        </tr>
+
+        <tr>
+            <td><input type="submit" value="Proceed" /></td>
+        </tr>
+    </table>
+            }
+
+</body>
+</html>

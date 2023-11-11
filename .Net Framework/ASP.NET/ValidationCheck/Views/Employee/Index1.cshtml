@@ -1,0 +1,59 @@
+﻿
+@using ValidationCheck.Models
+@model Employee
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index1</title>
+</head>
+<body>
+    @using (Html.BeginForm("ShowData", "Employee", FormMethod.Post))
+    {
+        @Html.ValidationSummary()
+        <table>
+            <tr>
+                <td>@Html.LabelFor(x => x.E_name, "Employee Name")</td>
+                <td>
+                    @Html.TextBoxFor(x => x.E_name)
+                    <br />
+                    @Html.ValidationMessageFor(x => x.E_name, "", new { @class = "text-danger" })
+                </td>
+            </tr>
+
+            <tr>
+                <td>@Html.LabelFor(x => x.Email)</td>
+                <td>
+                    @Html.EditorFor(x => x.Email)
+                    <br />
+                    @Html.ValidationMessageFor(x => x.Email)
+                </td>
+            </tr>
+
+            <tr>
+                <td>@Html.LabelFor(x => x.Age)</td>
+                <td>
+                    @Html.EditorFor(x => x.Age)
+                    <br />
+                    @Html.ValidationMessageFor(x => x.Age)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(x => x.Gender)</td>
+                <td>
+                    @Html.DropDownListFor(x=>x.Gender, new SelectList(Enum.GetValues(typeof(Gender))), "Select Gender")
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" ,id="submit" ,value="submit" /></td>
+            </tr>
+        </table>
+    }
+</body>
+</html>

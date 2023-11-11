@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CourseList</title>
+</head>
+<body>
+    <div>
+        <h2>Available Courses</h2>
+        @{
+            foreach (var x in @Model.CourseList)
+            {
+                @x <br>
+            }
+
+        }
+    </div>
+</body>
+</html>

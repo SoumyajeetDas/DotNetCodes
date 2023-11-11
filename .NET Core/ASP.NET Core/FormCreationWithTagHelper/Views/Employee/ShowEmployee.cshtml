@@ -1,0 +1,40 @@
+﻿@model Employee
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowEmployee</title>
+</head>
+<body>
+    <dl>
+        <dt>@Html.DisplayNameFor(model => model.Name)</dt>
+        <dd>@Html.DisplayFor(model => model.Name)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Age)</dt>
+        <dd>@Html.DisplayFor(model => model.Age)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Description)</dt>
+        <dd>@Html.DisplayFor(model => model.Description)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Password)</dt>
+        <dd>@Html.DisplayFor(model => model.Password)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Veg)</dt>
+        <dd>@Html.DisplayFor(model => model.Veg)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.NonVeg)</dt>
+        <dd>@Html.DisplayFor(model => model.NonVeg)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Gender)</dt>
+        <dd>@Html.DisplayFor(model => model.Gender)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Languages)</dt>
+        <dd>@Html.DisplayFor(model => model.Languages)</dd>
+    </dl>
+</body>
+</html>

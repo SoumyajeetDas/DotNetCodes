@@ -1,0 +1,26 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<ul class="navbar-nav">
+@if (User.IsInRole(UserRoles.Admin) && User.Identity.IsAuthenticated)
+{
+    <li class="nav-item">
+        <a  class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity.Name!</a>
+    </li>
+    <li class="nav-item">
+        <form  class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+            <a class="nav-link btn btn-link text-dark" asp-action="Logout" asp-controller="Account">Logout</a>
+        </form>
+    </li>
+}
+else
+{
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-action="AdminSignUp" asp-controller="Account">Admin Register</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-action="UserSignUp" asp-controller="Account">Login</a>
+    </li>
+}
+</ul>

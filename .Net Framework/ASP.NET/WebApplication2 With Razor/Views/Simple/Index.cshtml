@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h1> Loop : </h1>
+    </div>
+    <table>
+        @{
+            var Employee = new { Id = 1, name = "Soumyajeet" };
+
+            <p>
+                Employee ID : @Employee.Id <br />
+                Employee Name : @Employee.name<br />
+            </p>
+
+
+
+        }
+
+        @for (int i = 0; i < 10; i++)
+        {
+        <tr>
+            <td>@i</td>
+        </tr>
+        }
+
+    </table>
+  
+
+</body>
+</html>

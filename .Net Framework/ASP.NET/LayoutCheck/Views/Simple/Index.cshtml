@@ -1,0 +1,19 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+
+@RenderPage("~/Views/Employee/AddEmployee.cshtml","Soumayjeet",12.45,23)
+
+
+@RenderPage("~/Views/Employee/AddEmployee.cshtml","Soumyajeet",23.45,123)
+
+
+<p>This is Simple Index</p>
+@Html.ActionLink("Click to go to Add Employee", "AddEmployee", "Employee")
+<br />
+@Html.ActionLink("Click to go to Display Employee", "DisplayEmployee", "Employee")
+
+
+

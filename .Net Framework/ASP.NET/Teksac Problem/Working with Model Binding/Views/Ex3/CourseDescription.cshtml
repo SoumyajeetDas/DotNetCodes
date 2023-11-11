@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CourseDescription</title>
+</head>
+<body>
+    <div>
+        <h2>Course Details</h2>
+        <table>
+            <tr>
+                <td>Course ID</td>
+                <td><input type="text" id="CourseId" name="CourseId" readonly=readonly value="@Model.CourseId" />
+            </tr>
+
+            <tr>
+                <td>Course Name</td>
+                <td><input type="text" id="CourseName" name="CourseName" readonly=readonly value="@Model.CourseName" />
+            </tr>
+
+            <tr>
+                <td>Course Duration</td>
+                <td><input type="number" id="Duration" name="Duration" readonly=readonly value="@Model.Duration" />
+            </tr>
+
+            <tr>
+                <td>Course Level</td>
+                <td><input type="text" id="Level" name="Level" readonly=readonly value="@Model.Level" />
+            </tr>
+
+
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿@*@model HelperCheck.Models.Customer*@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowDetails</title>
+</head>
+<body>
+    <div>
+        Customer Name: @Html.Display("Cus_Name") <br />
+        Password: @Html.Display("Password") <br />
+        Customer Phone: @Html.Display("Cus_Phone") <br />
+        New To Company?: @Html.Display("New_To_Company") <br />
+        Gender: @Html.Display("Gender") <br />
+        City: @Html.Display("City") <br />
+
+    </div>
+</body>
+</html>

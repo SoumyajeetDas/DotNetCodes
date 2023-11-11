@@ -1,0 +1,54 @@
+﻿@using HelperCheck.Models
+@model Customer
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Indes5</title>
+</head>
+<body>
+    @using (Html.BeginForm("ShowDetails1", "Simple", FormMethod.Post))
+    {
+        <table>
+            <tr>
+                <td>@Html.Label("Cus_Name", "Customer Name")</td>
+                <td>@Html.EditorFor(m=>m.Cus_Name, new { @id = "Name", @class = "Name" })</td>  @*class cannot be defined*@
+            </tr>
+            <tr>
+                <td>@Html.Label("Cus_Phone", "Customer Phone")</td>
+                <td>@Html.EditorFor(m=> m.Cus_Phone)</td>
+            </tr>
+            <tr>
+                <td>@Html.Label("Password")</td>
+                <td>@Html.EditorFor(m=>m.Password)</td>
+            </tr>
+            <tr>
+                <td>@Html.Label("New_To_Company", "New to Company? ")</td>
+                <td>@Html.EditorFor(m=>m.New_To_Company)</td>
+            </tr>
+            <tr>
+                <td>@Html.Label("Gender")</td>
+
+                <td>@Html.EditorFor(m=>m.Gender)</td>  @*Radio button cannot be specified using*@
+            </tr>
+
+            <tr>
+                <td>@Html.Label("City")</td>   @*Dropdown List cannot be specified using*@
+                <td>@Html.EditorFor(m=>m.City)</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" />
+                </td>
+            </tr>
+
+
+        </table>
+    }
+</body>
+</html>

@@ -1,0 +1,80 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowResult</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <script src="~/js/Site1.js"></script>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+
+    <body style="background-color: rgb(1, 19, 38 );" onload="myFunction1(@ViewBag.Result)">
+        <div class="container mt-5">
+            <div class="row mt-5">
+                @if (ViewBag.Success == "Success")
+                {
+                    <div class="col-12  mx-auto mt-5">
+                        <p class="text-center text-warning" style="font-family: 'Acme', sans-serif; font-size:50px;">You got @ViewBag.Result %</p>
+                    </div>
+
+
+                    @if (ViewBag.Result < 50)
+                    {
+                        <div class="col-12">
+                            <div class="progress">
+
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="progress"></div>
+
+                            </div>
+                        </div>
+                        <div class="col-2 mx-auto  mt-5">
+                            <a asp-action="Logout" asp-controller="Home" class="btn btn-danger">Logout</a>
+                        </div>
+
+
+
+                    }
+                    else
+                    {
+                        <div class="col-12">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="progress"></div>
+                            </div>
+                        </div>
+                        <div class="col-2 mx-auto  mt-5">
+                            <a asp-action="Logout" asp-controller="Home" class="btn btn-danger">Logout</a>
+                        </div>
+
+                    }
+
+                }
+
+                else if (ViewBag.Failure == "Failure")
+                {
+                    <div class="col-12  mx-auto mt-5">
+                        <p class="text-center text-danger" style="font-family: 'Acme', sans-serif; font-size:50px;">Sorry your result cannot be saved</p>
+                        <center>
+                            <a asp-action="Index" class="btn btn-warning">Retake Exam</a>
+                        </center>
+                    </div>
+                }
+
+
+
+
+            </div>
+        </div>
+
+    </body>
+
+
+
+</html>

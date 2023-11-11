@@ -1,0 +1,68 @@
+﻿@model Library_App.Models.Library
+
+@{
+    ViewData["Title"] = "Purchase";
+}
+
+<div>
+    <h1>@Model.BookName</h1>
+    <hr />
+
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-md-5">
+                @if (@Model.Picture != null)
+                {
+                    var base64 = Convert.ToBase64String(Model.Picture);
+                    var imgsrc = String.Format("data:image;base64,{0}", base64);
+                    <img src="@imgsrc" width="350" height="300" />
+
+                }
+                else
+                {
+                    <b><i>No Picture</i></b>
+                }
+            </div>
+
+            <div class="col-md-7 py-auto">
+
+                <h4><b>@Model.AuthorName</b></h4>
+                <h4><b>@Model.Details</b></h4>
+                <h4><b>$@String.Format("{0:0.00#}", Model.cost) </b></h4>
+            </div>
+        </div>
+
+        <form id="payment-form" method="post" asp-controller="CheckoutStripe" asp-action="Create">
+            <div class="row">
+                <div class="col-12 my-2">
+                    @Html.HiddenFor(obj => obj.Id)
+
+                    <script src="https://checkout.stripe.com/checkout.js"
+                            class="stripe-button" @*Will create button for us*@
+
+                            data-key="pk_test_51KaObAFVhWYpi0cPUvCk6xKDXEaYn57WhjtE1gpeA8meulffvGQS8nMLRCEU4LGY3pFdhPOaSIjlcNT8VSXVHHiJ00o1KRXoWP"
+                             
+                            data-name="LibraryApp Payment" @*Name of popup*@
+
+                            data-description="@Model.AuthorName - @Model.BookName"
+                            data-locale="en"
+                            data-label="Confirm Payment - $@ViewBag.PurchaseAmount"> @*Label of the button*@
+
+                    </script>
+                </div>
+                
+
+               
+                
+            </div>
+        </form>
+
+    </div>
+    
+
+
+</div>
+<div>
+
+    <a asp-action="Index" asp-controller="LibraryStripe">Back to List</a>
+</div>

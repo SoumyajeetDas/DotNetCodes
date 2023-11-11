@@ -1,0 +1,83 @@
+﻿@model IEnumerable<BookModel>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetAllBooks</title>
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <h4 class="text-center">BookModel</h4>
+            <hr />
+            <div class="col-12">
+
+                <div>
+
+
+
+                    @foreach (var mod in Model)
+                    {
+                        <dl class="row">
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Title)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => mod.Title)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => mod.Author)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => mod.Author)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Description)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => mod.Description)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.CreatedOn)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => mod.CreatedOn)
+                            </dd>
+                            <div>
+                                <a asp-action="GetBook" asp-route-id="@mod.Id" class="btn btn-outline-warning mb-3">View</a>
+
+                            </div>
+                        </dl>
+                    }
+                    
+
+                </div>
+
+            </div>
+            <div class="col-3">
+                <div>
+                    <a asp-action="Index" class="btn d-block btn-primary">Back to List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+   
+
+    <script src="~/lib/twitter-bootstrap/js/bootstrap.js"></script>
+    <script src="~/js/site.js"></script>
+    
+
+</body>
+</html>

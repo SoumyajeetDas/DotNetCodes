@@ -1,0 +1,96 @@
+﻿@model EnitityFrameworkWithASP.NETCore.Models.BookModel
+@inject IBookRepository bookrepo
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AddBook</title>
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <h4 class="text-center">BookModel</h4>
+            <div class="col-md-4">
+
+
+                <form asp-action="AddBooks">
+
+                    <div asp-validation-summary="All" class="text-muted"></div>
+
+
+                    <div class="form-group">
+                        <label asp-for="Title" class="control-label"></label>
+                        <input asp-for="Title" class="form-control" id="Title"/>
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Author" class="control-label"></label>
+                        <input asp-for="Author" class="form-control" />
+                        <span asp-validation-for="Author" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Description" class="control-label"></label>
+                        <input asp-for="Description" class="form-control" />
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CreatedOn" class="control-label"></label>
+                        <input  class="form-control" type="date" />
+                        <span asp-validation-for="CreatedOn" class="text-danger"></span>
+                    </div>
+                    <div class="form-group my-2">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-md-4 bg-black text-white">
+
+                No of Values in the List =  @bookrepo.GetAllBooks().Result.Count;
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <a asp-action="GetAllBooks" class="btn btn-outline-info" onclick="Alert()">Back to List</a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!--<div>
+          -->
+    @*   Here Result is used to get the Result value of Task that is List<BookModel> then finding the Count of that List  *@
+    <!--</div>-->
+
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+
+    <script src="~/lib/twitter-bootstrap/js/bootstrap.js"></script>
+
+    <script src="~/js/site.js"></script>
+</body>
+</html>

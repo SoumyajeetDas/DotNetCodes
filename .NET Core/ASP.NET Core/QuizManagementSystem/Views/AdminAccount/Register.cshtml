@@ -1,0 +1,149 @@
+﻿@model QuizManagementSystem.Models.Admin
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Merriweather+Sans:wght@500&display=swap" rel="stylesheet">
+    <script src="~/js/Site1.js"></script>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body style="background-color: rgb(1, 19, 38 ); ">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-5 mx-auto mt-5">
+
+                <h3 class="text-center text-warning" style="font-family: 'IM Fell English SC', serif; font-family: 'Merriweather Sans', sans-serif;">Register Here !!</h3>
+
+                @if (ViewBag.Failure == "Failure")
+                {
+                    <div class="alert alert-danger text-center" role="alert">
+                        <b style="font-size:15px; text-align:center">Registration Failed !!</b>
+                    </div>
+
+                    <form asp-action="Register">
+                        <div asp-validation-summary="ModelOnly" class="text-danger" placeholder="Enter the username" style="background-color: rgb(26, 38, 51); color: white; border-color: rgb(1, 19, 38 ); "></div>
+                        <div class="form-row">
+
+                            <div class="col-12">
+                                <div class="form-group">
+
+                                    <div class="input-group ">
+
+                                        <input asp-for="Username" class="form-control" placeholder="Enter the username(email address)" style="background-color: rgb(26, 38, 51); color: white; border-color: rgb(26, 38, 51);" />
+                                    </div>
+                                    <span asp-validation-for="Username" class="text-danger"></span>
+                                </div>
+
+
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+
+                                    <div class="input-group">
+
+                                        <input asp-for="Password" id="password" class="form-control" placeholder="Enter the password" style="background-color: rgb(26, 38, 51); color: white; border-color: rgb(1, 19, 38 ); " />
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" onclick="password_show_hide();" style="background-color: rgb(26, 38, 51); border:none; ">
+                                                <i class="fas fa-eye text-warning" id="show_eye"></i>
+                                                <i class="fas fa-eye-slash d-none text-warning" id="hide_eye"></i>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <span asp-validation-for="Password" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input type="submit" value="Register" class="btn btn-success" />
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </form>
+                }
+                else if (ViewBag.Failure == "Present")
+                {
+                    <div class="alert alert-danger text-center" role="alert">
+                        <b style="font-size:15px;">Admin already present !!</b>
+                    </div>
+
+                    <a asp-action="Login" class="btn btn-success">Login Now</a>
+                }
+
+                else
+                {
+                    <form asp-action="Register">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-row">
+
+                            <div class="col-12">
+                                <div class="form-group">
+
+                                    <div class="input-group ">
+
+                                        <input asp-for="Username" class="form-control" placeholder="Enter the username(email address)" style="background-color: rgb(26, 38, 51); color: white; border-color: rgb(1, 19, 38 );" />
+                                    </div>
+                                    <span asp-validation-for="Username" class="text-danger"></span>
+                                </div>
+
+
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+
+                                    <div class="input-group">
+
+                                        <input asp-for="Password" id="password" class="form-control" placeholder="Enter the password" style="background-color: rgb(26, 38, 51); color: white; border-color: rgb(26, 38, 51);  " />
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" onclick="password_show_hide();" style="background-color: rgb(26, 38, 51);  border:none; ">
+                                                <i class="fas fa-eye text-warning" id="show_eye"></i>
+                                                <i class="fas fa-eye-slash d-none text-warning" id="hide_eye"></i>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <span asp-validation-for="Password" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input type="submit" value="Register" class="btn btn-success" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                }
+
+
+            </div>
+
+
+            <div class="col-md-5 col-12 mx-auto mt-5">
+                <script src="https://unpkg.com/@@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_vf2aaeub.json" background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay></lottie-player>
+            </div>
+        </div>
+    </div>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    </environment>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+</body>
+</html>

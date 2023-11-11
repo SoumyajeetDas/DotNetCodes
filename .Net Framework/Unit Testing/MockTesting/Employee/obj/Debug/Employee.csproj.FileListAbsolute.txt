@@ -1,0 +1,12 @@
+D:\.Net Framework\Testing\MockTesting\Employee\bin\Debug\Employee.dll
+D:\.Net Framework\Testing\MockTesting\Employee\bin\Debug\Employee.pdb
+D:\.Net Framework\Testing\MockTesting\Employee\obj\Debug\Employee.csproj.AssemblyReference.cache
+D:\.Net Framework\Testing\MockTesting\Employee\obj\Debug\Employee.csproj.CoreCompileInputs.cache
+D:\.Net Framework\Testing\MockTesting\Employee\obj\Debug\Employee.dll
+D:\.Net Framework\Testing\MockTesting\Employee\obj\Debug\Employee.pdb
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\Employee\bin\Debug\Employee.dll
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\Employee\bin\Debug\Employee.pdb
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\Employee\obj\Debug\Employee.csproj.AssemblyReference.cache
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\Employee\obj\Debug\Employee.csproj.CoreCompileInputs.cache
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\Employee\obj\Debug\Employee.dll
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\Employee\obj\Debug\Employee.pdb

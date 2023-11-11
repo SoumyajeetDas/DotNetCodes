@@ -1,0 +1,6 @@
+D:\.Net Framework\Testing\Calculation\bin\Debug\Calculation.dll
+D:\.Net Framework\Testing\Calculation\bin\Debug\Calculation.pdb
+D:\.Net Framework\Testing\Calculation\obj\Debug\Calculation.csproj.AssemblyReference.cache
+D:\.Net Framework\Testing\Calculation\obj\Debug\Calculation.csproj.CoreCompileInputs.cache
+D:\.Net Framework\Testing\Calculation\obj\Debug\Calculation.dll
+D:\.Net Framework\Testing\Calculation\obj\Debug\Calculation.pdb

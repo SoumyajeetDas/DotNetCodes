@@ -1,0 +1,66 @@
+﻿@model ParkyWeb.ViewModel.TrailViewModel;
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+
+   
+</head>
+<body>
+    <div class="container my-3">
+        <h4>Trail</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="form-group">
+                        <label asp-for="Trail.Name" class="control-label"></label>
+                        <input asp-for="Trail.Name" class="form-control" />
+                        <span asp-validation-for="Trail.Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Trail.Distance" class="control-label"></label>
+                        <input asp-for="Trail.Distance" class="form-control" />
+                        <span asp-validation-for="Trail.Distance" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Trail.Difficulty" class="control-label"></label>
+                        <select asp-for="Trail.Difficulty" asp-items="Html.GetEnumSelectList<DifficultyType>()" class="form-control">
+                            <option value="Nothing Chosen" >Please choose the difficulty level</option>
+                        </select>
+                        
+                        <span asp-validation-for="Trail.Difficulty" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Trail.NationalParkId" class="control-label"></label>
+                        @Html.DropDownListFor(x => x.Trail.NationalParkId, new SelectList(Model.NationalParks, "Id", "Name"), "Select the National Park", new { @class = "form-control" })
+                        <span asp-validation-for="Trail.NationalParkId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+</body>
+</html>

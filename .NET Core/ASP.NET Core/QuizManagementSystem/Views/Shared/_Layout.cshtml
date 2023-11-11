@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .nav-link:hover {
+            border-radius: 15px;
+            box-shadow: 1px 1px 90px 2px red,-1px -1px 90px 2px red;
+        }
+        .modal-content {
+            margin: 2px auto;
+            background-color:white;
+            z-index: 2 !important;
+        }
+        .modal-backdrop {
+            z-index: 1040 !important;
+        }
+    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuizManagementSystem</title>
+    <script src="https://kit.fontawesome.com/3afbe372ee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header >
+        <div class="container-fluid bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark pt-2 hover-item" id="navbar">
+                <div class="container-fluid">
+
+
+                    <h1 style="text-shadow:2px 2px 9px black;"><b style="font-family: 'Dancing Script', cursive; color:white;">Quiz Portal</b></h1>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" style=""></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav  mb-2 ml-auto">
+
+                            @if (!User.Identity.IsAuthenticated)
+                            {
+                                <li class="nav-item mr-lg-4 mb-2">
+
+                                    <a class="nav-link btn-sm  p-2" aria-current="page" asp-action="Register" asp-controller="AdminAccount" style="color: red; border: 2px solid red; "><i class="fas fa-user-plus mr-2"></i>Register</a>
+                                </li>
+
+                                <li class="nav-item mr-lg-4 mb-2">
+
+                                    <a class="nav-link btn-sm  p-2" aria-current="page" asp-action="Login" asp-controller="AdminAccount" style="color: red; border: 2px solid red; "><i class="fas fa-sign-in-alt mr-2"></i>Login</a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="nav-item mr-lg-4 mb-2">
+
+                                    <p class="text-warning m-2" style=" font-size:20px;">Hi @User.Identity.Name</p>
+                                </li>
+
+                                <li class="nav-item mr-lg-4">
+
+                                    <a class="nav-link btn m-2 p-2" aria-current="page" asp-action="UploadFile" asp-controller="UploadFile" style="color: red; border: 2px solid red; "><i class="fas fa-home mr-2"></i>Home</a>
+                                </li>
+
+                                <li class="nav-item mr-lg-4">
+
+                                    <a class="nav-link btn m-2 p-2" aria-current="page" asp-action="ShowResults" asp-controller="UploadFile" style="color: red; border: 2px solid red; "><i class="fas fa-poll-h mr-2"></i>Show Results</a>
+                                </li>
+
+
+                                <li class="nav-item">
+
+                                    <button type="button" class=" nav-link btn  p-2 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal2" style="color: red;  border: 2px solid red;">
+                                        <i class="fas fa-sign-out-alt text-danger"></i>
+                                        Logout
+                                    </button>
+                                    <div class="modal fade"  id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" >
+                                            <div class="modal-content" style="z-index:4 !important;">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Do you really want to Logout?</h5>
+
+                                                </div>
+
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    <a class="btn btn-danger" asp-action="Logout" asp-controller="AdminAccount">Logout</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            }
+
+
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

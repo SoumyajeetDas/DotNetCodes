@@ -1,0 +1,15 @@
+﻿@model IEnumerable<CheckingModel.Models.Employee>
+@{
+    ViewBag.Title = "ShowDetail";
+}
+
+<h2>ShowDetail</h2>
+
+@{ 
+    foreach(var x in @Model)  //You can also use only Model here by removing the @ part
+            {
+                <p>EmpID = @x.Emp_Id  EmpName = @x.Emp_Name</p>
+            }
+
+}
+

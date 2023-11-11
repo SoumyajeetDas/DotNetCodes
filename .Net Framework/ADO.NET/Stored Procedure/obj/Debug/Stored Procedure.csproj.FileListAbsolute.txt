@@ -1,0 +1,7 @@
+D:\ADO.NET\Stored Procedure\bin\Debug\Stored Procedure.exe.config
+D:\ADO.NET\Stored Procedure\bin\Debug\Stored Procedure.exe
+D:\ADO.NET\Stored Procedure\bin\Debug\Stored Procedure.pdb
+D:\ADO.NET\Stored Procedure\obj\Debug\Stored Procedure.csproj.AssemblyReference.cache
+D:\ADO.NET\Stored Procedure\obj\Debug\Stored Procedure.csproj.CoreCompileInputs.cache
+D:\ADO.NET\Stored Procedure\obj\Debug\Stored Procedure.exe
+D:\ADO.NET\Stored Procedure\obj\Debug\Stored Procedure.pdb

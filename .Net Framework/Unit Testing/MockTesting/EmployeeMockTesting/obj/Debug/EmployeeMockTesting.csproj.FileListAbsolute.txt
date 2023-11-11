@@ -1,0 +1,48 @@
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\bin\Debug\EmployeeMockTesting.dll
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\bin\Debug\EmployeeMockTesting.pdb
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\bin\Debug\Castle.Core.dll
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\bin\Debug\Employee.dll
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\bin\Debug\Moq.dll
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\bin\Debug\Employee.pdb
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\bin\Debug\Castle.Core.xml
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\bin\Debug\Moq.xml
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\obj\Debug\EmployeeMockTesting.csproj.AssemblyReference.cache
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\obj\Debug\EmployeeMockTesting.csproj.CoreCompileInputs.cache
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\obj\Debug\EmployeeMockTesting.csproj.CopyComplete
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\obj\Debug\EmployeeMockTesting.dll
+D:\.Net Framework\Testing\MockTesting\EmployeeMockTesting\obj\Debug\EmployeeMockTesting.pdb
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\bin\Debug\EmployeeMockTesting.dll
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\bin\Debug\EmployeeMockTesting.pdb
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\bin\Debug\Castle.Core.dll
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\bin\Debug\Employee.dll
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\bin\Debug\Moq.dll
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\bin\Debug\Employee.pdb
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\bin\Debug\Castle.Core.xml
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\bin\Debug\Moq.xml
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\obj\Debug\EmployeeMockTesting.csproj.AssemblyReference.cache
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\obj\Debug\EmployeeMockTesting.csproj.CoreCompileInputs.cache
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\obj\Debug\EmployeeMockTesting.csproj.CopyComplete
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\obj\Debug\EmployeeMockTesting.dll
+D:\ASP.NET\.Net Framework\Unit Testing\MockTesting\EmployeeMockTesting\obj\Debug\EmployeeMockTesting.pdb

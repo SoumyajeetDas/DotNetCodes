@@ -1,0 +1,11 @@
+D:\ADO.NET\Entity Framework\EntityFrameworkDesignerFromDatabse\bin\Debug\EntityFrameworkDesignerFromDatabse.exe.config
+D:\ADO.NET\Entity Framework\EntityFrameworkDesignerFromDatabse\bin\Debug\EntityFrameworkDesignerFromDatabse.exe
+D:\ADO.NET\Entity Framework\EntityFrameworkDesignerFromDatabse\bin\Debug\EntityFrameworkDesignerFromDatabse.pdb
+D:\ADO.NET\Entity Framework\EntityFrameworkDesignerFromDatabse\bin\Debug\EntityFramework.dll
+D:\ADO.NET\Entity Framework\EntityFrameworkDesignerFromDatabse\bin\Debug\EntityFramework.SqlServer.dll
+D:\ADO.NET\Entity Framework\EntityFrameworkDesignerFromDatabse\bin\Debug\EntityFramework.xml
+D:\ADO.NET\Entity Framework\EntityFrameworkDesignerFromDatabse\bin\Debug\EntityFramework.SqlServer.xml
+D:\ADO.NET\Entity Framework\EntityFrameworkDesignerFromDatabse\obj\Debug\EntityFrameworkDesignerFromDatabse.csproj.CoreCompileInputs.cache
+D:\ADO.NET\Entity Framework\EntityFrameworkDesignerFromDatabse\obj\Debug\EntityFrameworkDesignerFromDatabse.csproj.CopyComplete
+D:\ADO.NET\Entity Framework\EntityFrameworkDesignerFromDatabse\obj\Debug\EntityFrameworkDesignerFromDatabse.exe
+D:\ADO.NET\Entity Framework\EntityFrameworkDesignerFromDatabse\obj\Debug\EntityFrameworkDesignerFromDatabse.pdb

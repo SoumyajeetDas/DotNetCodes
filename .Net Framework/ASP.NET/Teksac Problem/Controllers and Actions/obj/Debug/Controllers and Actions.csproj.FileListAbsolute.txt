@@ -1,0 +1,79 @@
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\Controllers and Actions.dll.config
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\Controllers and Actions.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\Controllers and Actions.pdb
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\csc.exe
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\csc.exe.config
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\csc.rsp
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\csi.exe
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\csi.exe.config
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\csi.rsp
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\Microsoft.Managed.Core.targets
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.AppContext.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.Collections.Immutable.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.Console.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.Globalization.Calendars.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.IO.Compression.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.IO.FileSystem.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.Net.Http.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.Net.Sockets.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.Reflection.Metadata.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.ValueTuple.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.Xml.XmlDocument.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.Xml.XPath.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\vbc.exe
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\vbc.exe.config
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\vbc.rsp
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\VBCSCompiler.exe
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\roslyn\VBCSCompiler.exe.config
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\Antlr3.Runtime.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\Microsoft.Web.Infrastructure.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\Newtonsoft.Json.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\System.Web.Helpers.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\System.Web.Mvc.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\System.Web.Optimization.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\System.Web.Razor.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\System.Web.WebPages.Deployment.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\System.Web.WebPages.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\System.Web.WebPages.Razor.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\WebGrease.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\System.Web.Helpers.xml
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\System.Web.Mvc.xml
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\System.Web.Optimization.xml
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\System.Web.Razor.xml
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\System.Web.WebPages.xml
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\System.Web.WebPages.Deployment.xml
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\System.Web.WebPages.Razor.xml
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\Newtonsoft.Json.xml
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\Antlr3.Runtime.pdb
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\obj\Debug\Controllers and Actions.csproj.AssemblyReference.cache
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\obj\Debug\Controllers and Actions.csproj.CoreCompileInputs.cache
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\obj\Debug\Controllers and Actions.csproj.CopyComplete
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\obj\Debug\Controllers and Actions.dll
+D:\.Net Framework\ASP.NET\Teksac Problem\Controllers and Actions\obj\Debug\Controllers and Actions.pdb

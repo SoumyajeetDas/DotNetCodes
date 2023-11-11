@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Partial_View_on_different_folders_other_than_Shared.Models.Employee>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @Html.Partial("_Header")
+
+    @foreach (var item in Model)
+            {
+                @Html.Partial("_Footer",item);
+            }
+
+
+</body>
+</html>

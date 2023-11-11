@@ -1,0 +1,100 @@
+﻿@model QuizManagementSystem.Models.Admin
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Merriweather+Sans:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3afbe372ee.js" crossorigin="anonymous"></script>
+    <script src="~/js/Site1.js"></script>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body style="background-color: rgb(1, 19, 38 ); ">
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-5 mx-auto mt-5">
+                <h3 class="text-center text-warning" style="font-family: 'IM Fell English SC', serif; font-family: 'Merriweather Sans', sans-serif;">Login Here !!</h3>
+                @if (ViewBag.Failure == "Failure")
+                {
+                    <div class="alert alert-danger text-center" role="alert">
+                        <b style="font-size:15px;">Username or password is wrong !!</b>
+                    </div>
+                }
+
+                <form asp-action="Login">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+                    <div class="form-row">
+
+                        <div class="col-12">
+                            <div class="form-group">
+
+                                <div class="input-group ">
+
+                                    <input asp-for="Username" class="form-control" placeholder="Enter the username(email address)" style="background-color: rgb(26, 38, 51); color: white; border-color: rgb(1, 19, 38 );" />
+                                </div>
+                                <span asp-validation-for="Username" class="text-danger"></span>
+                            </div>
+
+
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+
+                                <div class="input-group">
+
+                                    <input asp-for="Password" id="password" class="form-control" placeholder="Enter the password" style="background-color: rgb(26, 38, 51); color: white; border-color: rgb(26, 38, 51 ); " />
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" onclick="password_show_hide();" style="background-color: rgb(26, 38, 51); border:none; ">
+                                            <i class="fas fa-eye text-warning" id="show_eye"></i>
+                                            <i class="fas fa-eye-slash d-none text-warning" id="hide_eye"></i>
+                                        </span>
+                                    </div>
+
+
+                                </div>
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-group">
+                                <input type="submit" value="Login" class="btn btn-danger" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <a asp-action="ForgotPassword" class="text-danger text-right mr-auto">Forgot Password??</a>
+
+                </form>
+            </div>
+            <div class="col-md-6 mt-5">
+                <script src="https://unpkg.com/@@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player class="mt-5" src="https://assets6.lottiefiles.com/packages/lf20_xvrofzfk.json" background="transparent" speed="1" style="width: 600px; height: 600px;" loop autoplay></lottie-player>
+            </div>
+        </div>
+    </div>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    </environment>
+
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+</body>
+</html>

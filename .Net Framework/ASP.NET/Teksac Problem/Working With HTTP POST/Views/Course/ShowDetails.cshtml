@@ -1,0 +1,38 @@
+﻿@model Working_With_HTTP_POST.Models.Course
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowDetails</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Course Name </td>
+            <td>@Model.CourseName</td>
+        </tr>
+
+        <tr>
+            <td>Course Id </td>
+            <td>@Model.CourseId</td>
+        </tr>
+
+        <tr>
+            <td>Course Duration </td>
+            <td>@Model.Duration</td>
+        </tr>
+
+        <tr>
+            <td>Course Level </td>
+            <td>@Model.Level</td>
+        </tr>
+
+        
+    </table>
+</body>
+</html>

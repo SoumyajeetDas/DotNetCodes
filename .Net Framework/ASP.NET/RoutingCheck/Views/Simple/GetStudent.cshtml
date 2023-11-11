@@ -1,0 +1,51 @@
+﻿@model RoutingCheck.Models.Student
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetStudent</title>
+</head>
+<body>
+    <div>
+        <h4>Student</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Id)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Id)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Address.HomeNumber)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Address.HomeNumber)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Address.City)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Address.City)
+            </dd>
+
+        </dl>
+    </div>
+    
+</body>
+</html>

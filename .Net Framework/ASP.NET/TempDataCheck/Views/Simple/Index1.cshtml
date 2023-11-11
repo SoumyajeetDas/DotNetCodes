@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index1</title>
+</head>
+<body>
+    <div> 
+        <h1>Index 1</h1>
+
+        <h3>@TempData["mykey"]</h3>
+
+        @{ 
+            TempData["mykey2"] = "Steve";
+        }
+    </div>
+</body>
+</html>

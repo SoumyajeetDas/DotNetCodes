@@ -1,0 +1,74 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index1</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>@Html.Partial("_HeaderNavBar")</th>
+        </tr>
+
+        <tr>
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" id="Name" name="Name"></td>
+                </tr>
+
+                <tr>
+                    <td>PhoneNumber</td>
+                    <td><input type="text" id="Number" name-"Number"></td>
+                </tr>
+
+                <tr>
+                    <td>Donation For</td>
+                    <td>
+                        <select name="Donation" id="Donation">
+                            <option value="Education">Education</option>
+                            <option value="Hospital">Hospital</option>
+                            <option value="Old People Caring Home">Old People Caring Home</option>
+                        </select>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>Amount</td>
+                    <td><input type="text" id="Amount" name="Amount"></td>
+                </tr>
+
+                <tr>
+                    <td>Doantion Type</td>
+                    <td>
+                        <input type="radio" id="Dtype" name="Dtype" value="One Time Donation" checked>One Time Donation
+                        <input type="radio" id="Dtype" name="Dtype" value="Recurring Donation">One Time Donation
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><button type="submit" id="submit" name="submit">Proceed</td>
+                </tr>
+
+            </table>
+        </tr>
+
+        <tr>
+            <th>@Html.Partial("_FooterNavBar")</th>
+        </tr>
+    </table>
+
+</body>
+</html>
+
+
+
+
+

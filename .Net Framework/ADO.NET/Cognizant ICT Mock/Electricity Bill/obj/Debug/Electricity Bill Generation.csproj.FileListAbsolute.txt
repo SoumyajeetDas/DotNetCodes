@@ -1,0 +1,14 @@
+D:\ADO.NET\Cognizant ICT Mock\Electricity Bill\bin\Debug\Electricity Bill.exe.config
+D:\ADO.NET\Cognizant ICT Mock\Electricity Bill\bin\Debug\Electricity Bill.exe
+D:\ADO.NET\Cognizant ICT Mock\Electricity Bill\bin\Debug\Electricity Bill.pdb
+D:\ADO.NET\Cognizant ICT Mock\Electricity Bill\obj\Debug\Electricity Bill Generation.csproj.AssemblyReference.cache
+D:\ADO.NET\Cognizant ICT Mock\Electricity Bill\obj\Debug\Electricity Bill Generation.csproj.CoreCompileInputs.cache
+D:\ADO.NET\Cognizant ICT Mock\Electricity Bill\obj\Debug\Electricity Bill.exe
+D:\ADO.NET\Cognizant ICT Mock\Electricity Bill\obj\Debug\Electricity Bill.pdb
+D:\.Net Framework\ADO.NET\Cognizant ICT Mock\Electricity Bill\bin\Debug\Electricity Bill.exe.config
+D:\.Net Framework\ADO.NET\Cognizant ICT Mock\Electricity Bill\bin\Debug\Electricity Bill.exe
+D:\.Net Framework\ADO.NET\Cognizant ICT Mock\Electricity Bill\bin\Debug\Electricity Bill.pdb
+D:\.Net Framework\ADO.NET\Cognizant ICT Mock\Electricity Bill\obj\Debug\Electricity Bill Generation.csproj.AssemblyReference.cache
+D:\.Net Framework\ADO.NET\Cognizant ICT Mock\Electricity Bill\obj\Debug\Electricity Bill Generation.csproj.CoreCompileInputs.cache
+D:\.Net Framework\ADO.NET\Cognizant ICT Mock\Electricity Bill\obj\Debug\Electricity Bill.exe
+D:\.Net Framework\ADO.NET\Cognizant ICT Mock\Electricity Bill\obj\Debug\Electricity Bill.pdb

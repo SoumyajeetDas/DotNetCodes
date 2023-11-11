@@ -1,0 +1,22 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index1</title>
+</head>
+<body>
+    <div>
+        @Html.ActionLink("Click", "Index")<br /> @*   @Html.ActionLink("Link Text","Target")   if you are redirecting ta a action link on the same controller you do not need to specify the Controler Name *@
+
+        @Html.ActionLink("Click to go to About of HomeController", "About", "Home") <br /> @*   @Html.ActionLink("Link Text","Target","Cotroller Name")    *@
+
+        @Html.ActionLink("Click here to go to index 2", "Index2", new { id = 2 }) @*   @Html.ActionLink("Link Text","Target","Passing any parameter to the url")    *@
+    </div>
+</body>
+</html>

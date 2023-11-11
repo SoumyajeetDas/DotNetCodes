@@ -1,0 +1,69 @@
+﻿@model Employee
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AddNewEmployee</title>
+</head>
+<body>
+    <form method="post" asp-controller="Employee" asp-action="AddNewEmployee">
+        <table>
+            <tr>
+                <td><label asp-for="Name"></label></td>
+                <td><input asp-for="Name"></td>
+            </tr>
+
+            <tr>
+                <td><label asp-for="Age"></label></td>
+                <td><input asp-for="Age" id="ageid"></td>
+            </tr>
+
+            <tr>
+                <td><label asp-for="Description"></label></td>
+                <td><textarea asp-for="Description"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label asp-for="Password"></label></td>
+                <td><input asp-for="Password" id="Pass" /></td>
+            </tr>
+
+            <tr>
+                <td><label asp-for="Email"></label></td>
+                <td><input asp-for="Email" id="email" /></td>
+            </tr>
+
+            <tr>
+                <td><label>Food Type : </label></td>
+                <td><input asp-for="Veg"/>Veg
+                <input asp-for="NonVeg" />Non-Veg
+                </td>
+            </tr>
+
+            <tr>
+                <td><label asp-for="Gender"></label></td>
+                <td>
+                    <input asp-for="Gender" value="male" type="radio" />Male
+                    <input asp-for="Gender" value="female" type="radio" />Female
+                </td>
+            </tr>
+            <tr>
+                <td><label asp-for="Languages"></label></td>
+                <td><select asp-for="Languages" asp-items="Html.GetEnumSelectList<Languages>()">
+                    <option value="Nothing Chosen">Please choose a language</option>
+                    </select></td>
+            </tr>
+            
+
+            <tr>
+                <td><input type="submit" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

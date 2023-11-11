@@ -1,0 +1,80 @@
+﻿@using HelperCheck.Models
+@model Customer
+
+@*The name property of each attribute binds the data the model*@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index2</title>
+</head>
+<body>
+    <div>
+        Hi I am Soumayjeet
+        @ViewBag.num
+    </div>
+   
+    <div>                           @*  Html.BeginForm("Action Method where it will be directed by the server","Controller to which the Action Method belong to",FormMethod.Post/Get)  *@
+        @using (Html.BeginForm("ShowDEtails", "Simple", FormMethod.Post)) 
+        {
+            <table>
+                <tr>
+                    <td>@Html.Label("Cus_name")</td>
+
+                    <td>@Html.TextBox("Cus_Name" ,"Soumyajeet",new { @class="Cust_Name"})</td> @* Here Soumyajeet will be the defaukt value and new is used to specify the class and the Cus_Name athe beginning is the name part in the HTMl part  *@
+
+                </tr>
+
+                <tr>
+                    <td>@Html.Label("Password")</td>
+                    <td>
+                        @Html.Password("Password", "", new { id = "Pass" }) @*  new specifies the password here *@
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>@Html.Label("Phone", "Customer Phone")</td> @*  If we want to give a different name in the view part which will be not as same as name in the index part use @Html.Lable("property name in the model","name that we want to see in the view part")  *@
+                    <td>
+                        @Html.TextBox("Phone")<br />
+                       
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>@Html.Label("New_To_Company", "New To Company")</td>
+                    <td>@Html.CheckBox("New_To_Company", true)</td>
+                </tr>
+
+                <tr>
+                    <td>@Html.Label("Gender")</td>
+                    <td>
+                        @Html.RadioButton("Gender", "Male") Male
+                        @Html.RadioButton("Gender", "Female") Female
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>@Html.Label("City")</td>
+                    <td>
+                        @Html.DropDownList("City", new SelectList(Enum.GetValues(typeof(City))), "Select Gender", new { @class = "form_control" })
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="submit" />
+                    </td>
+                </tr>
+            </table>
+        }
+
+    </div>
+</body>
+</html>

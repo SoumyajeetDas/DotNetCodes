@@ -1,0 +1,78 @@
+﻿@*@using Razor_Syntax.Models*@
+@model Razor_Syntax.Models.Employee
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+       @DateTime.Now
+    </div>
+
+    <div>
+        @{
+
+            var a = 5;
+            var b = 6;
+            var c = a + b;
+            <p>@c</p>
+            <p>@@soumyajeet</p>
+
+        }
+    </div>
+
+    <div>
+
+        @{
+            int variable = 3;
+        }
+
+
+
+
+        @if (variable == 1)
+        {
+            <h1>I am Soumyajeet</h1>
+        }
+        else if (variable == 2)
+        {
+            <h1>I am not Soumyajeet</h1>
+        }
+        else
+        {
+            <h1>I am No one</h1>
+        }
+
+        @(variable==1?"Soumyajeet":(variable==2?"I am not Soumyajeet":"I am no one"))
+
+        @*@{
+            Employee e = new Employee();
+
+            e.Emp_Id = 1;
+            e.Emp_Name = "Soumyajeet Das";
+        }*@
+
+        @*<p>EmpId = @e.Emp_Id</p>
+        <p>EmpName = @e.Emp_Name</p>*@
+
+
+        
+           
+
+            @*@Model.Emp_Id=1;
+            @Model.Emp_Name=Soumyajeet;*@
+        
+
+        <p>EmpId = @Model.Emp_Id</p>
+        <p>EmpName = @Model.Emp_Name</p>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+D:\ADO.NET\Insert Update and Delete\bin\Debug\Insert Update and Delete.exe.config
+D:\ADO.NET\Insert Update and Delete\bin\Debug\Insert Update and Delete.exe
+D:\ADO.NET\Insert Update and Delete\bin\Debug\Insert Update and Delete.pdb
+D:\ADO.NET\Insert Update and Delete\obj\Debug\Insert Update and Delete.csproj.AssemblyReference.cache
+D:\ADO.NET\Insert Update and Delete\obj\Debug\Insert Update and Delete.csproj.CoreCompileInputs.cache
+D:\ADO.NET\Insert Update and Delete\obj\Debug\Insert Update and Delete.exe
+D:\ADO.NET\Insert Update and Delete\obj\Debug\Insert Update and Delete.pdb

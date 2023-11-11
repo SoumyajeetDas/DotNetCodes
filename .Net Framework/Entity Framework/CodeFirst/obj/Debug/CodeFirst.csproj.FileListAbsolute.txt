@@ -1,0 +1,27 @@
+D:\ADO.NET\Entity Framework\CodeFirst\bin\Debug\CodeFirst.exe.config
+D:\ADO.NET\Entity Framework\CodeFirst\bin\Debug\CodeFirst.exe
+D:\ADO.NET\Entity Framework\CodeFirst\bin\Debug\CodeFirst.pdb
+D:\ADO.NET\Entity Framework\CodeFirst\bin\Debug\EntityFramework.dll
+D:\ADO.NET\Entity Framework\CodeFirst\bin\Debug\EntityFramework.SqlServer.dll
+D:\ADO.NET\Entity Framework\CodeFirst\bin\Debug\EntityFramework.xml
+D:\ADO.NET\Entity Framework\CodeFirst\bin\Debug\EntityFramework.SqlServer.xml
+D:\ADO.NET\Entity Framework\CodeFirst\obj\Debug\CodeFirst.csproj.CoreCompileInputs.cache
+D:\ADO.NET\Entity Framework\CodeFirst\obj\Debug\CodeFirst.csproj.CopyComplete
+D:\ADO.NET\Entity Framework\CodeFirst\obj\Debug\CodeFirst.exe
+D:\ADO.NET\Entity Framework\CodeFirst\obj\Debug\CodeFirst.pdb
+D:\ADO.NET\Entity Framework\CodeFirst\obj\Debug\CodeFirst.Migrations.Initialize_Database.resources
+D:\ADO.NET\Entity Framework\CodeFirst\obj\Debug\CodeFirst.csproj.GenerateResource.cache
+D:\.Net Framework\Entity Framework\CodeFirst\bin\Debug\CodeFirst.exe.config
+D:\.Net Framework\Entity Framework\CodeFirst\bin\Debug\CodeFirst.exe
+D:\.Net Framework\Entity Framework\CodeFirst\bin\Debug\CodeFirst.pdb
+D:\.Net Framework\Entity Framework\CodeFirst\bin\Debug\EntityFramework.dll
+D:\.Net Framework\Entity Framework\CodeFirst\bin\Debug\EntityFramework.SqlServer.dll
+D:\.Net Framework\Entity Framework\CodeFirst\bin\Debug\EntityFramework.xml
+D:\.Net Framework\Entity Framework\CodeFirst\bin\Debug\EntityFramework.SqlServer.xml
+D:\.Net Framework\Entity Framework\CodeFirst\obj\Debug\CodeFirst.csproj.AssemblyReference.cache
+D:\.Net Framework\Entity Framework\CodeFirst\obj\Debug\CodeFirst.Migrations.Initialize_Database.resources
+D:\.Net Framework\Entity Framework\CodeFirst\obj\Debug\CodeFirst.csproj.GenerateResource.cache
+D:\.Net Framework\Entity Framework\CodeFirst\obj\Debug\CodeFirst.csproj.CoreCompileInputs.cache
+D:\.Net Framework\Entity Framework\CodeFirst\obj\Debug\CodeFirst.csproj.CopyComplete
+D:\.Net Framework\Entity Framework\CodeFirst\obj\Debug\CodeFirst.exe
+D:\.Net Framework\Entity Framework\CodeFirst\obj\Debug\CodeFirst.pdb

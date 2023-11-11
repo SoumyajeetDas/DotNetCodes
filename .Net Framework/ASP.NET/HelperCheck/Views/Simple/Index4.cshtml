@@ -1,0 +1,55 @@
+﻿@using HelperCheck.Models
+@model Customer
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index4</title>
+</head>
+<body>
+    @using(Html.BeginForm("ShowDetails1","Simple",FormMethod.Post))
+            {
+    <table>
+        <tr>
+            <td>@Html.Label("Cus_Name", "Customer Name")</td>
+            <td>@Html.Editor("Cus_Name", new { @id = "Name", @class = "Name" })</td>  @*class cannot be defined*@
+        </tr>
+        <tr>
+            <td>@Html.Label("Cus_Phone", "Customer Phone")</td>
+            <td>@Html.Editor("Cus_Phone")</td>
+        </tr>
+        <tr>
+            <td>@Html.Label("Password")</td>
+            <td>@Html.Editor("Password")</td>
+        </tr>
+        <tr>
+            <td>@Html.Label("New_To_Company", "New to Company? ")</td>
+            <td>@Html.Editor("New_To_Company")</td>
+        </tr>
+        <tr>
+            <td>@Html.Label("Gender")</td>
+
+            <td>@Html.Editor("Gender")</td>  @*Radio button cannot be specified using*@
+        </tr>
+
+        <tr>
+            <td>@Html.Label("City")</td>   @*Dropdown List cannot be specified using*@
+            <td>@Html.Editor("City")</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" />
+            </td>
+        </tr>
+
+
+    </table>
+            }
+    
+</body>
+</html>

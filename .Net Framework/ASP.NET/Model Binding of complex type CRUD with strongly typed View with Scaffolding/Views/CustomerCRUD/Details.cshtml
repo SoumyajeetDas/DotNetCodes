@@ -1,0 +1,42 @@
+﻿@model WebApplication1_Model_Binding_CRUD.Models.Customer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CustCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustCity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustCity)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CustCode  }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
